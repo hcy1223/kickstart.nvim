@@ -170,6 +170,7 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 
 -- neoTree map
 vim.keymap.set('n', '<leader>o', '<cmd>Neotree<cr>', { silent = true })
+vim.keymap.set('n', '<leader>e', '<cmd>Neotree position=float source=buffers<cr>', { silent = true })
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
